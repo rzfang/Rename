@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./styles1.css" rel="stylesheet">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div id="file-loader">
+      <div>目標資料夾</div>
+      <input type="text"/>
+      <button>瀏覽</button>
+    </div>
+    <table id="file-list">
+      <thead><tr><th>原檔名</th><th>新檔名</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

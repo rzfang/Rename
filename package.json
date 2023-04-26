@@ -1,0 +1,44 @@
+{
+  "name": "Reame",
+  "version": "0.0.1",
+  "description": "a GUI files rename tool",
+  "main": "SRC/main.js",
+  "scripts": {
+    "build": "node-sass --output SRC/ SRC/",
+    "dev": "ENV=development electron SRC/main.js",
+    "dev:css": "node-sass --watch --output SRC/ SRC/",
+    "lint": "eslint --ext .js,.json,.mjs SRC",
+    "start": "electron SRC/main.js"
+  },
+  "repository": "https://github.com/rzfang/Mr.Name",
+  "keywords": [
+    "electron"
+  ],
+  "author": "RZ Fang",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "electron": "^23.2.1",
+    "node-gyp": "^9.3.1",
+    "node-sass": "^8.0.0",
+    "riot": "^7.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-plugin-json": "^3.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "json"
+    ]
+  }
+}

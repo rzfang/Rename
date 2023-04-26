@@ -1,0 +1,9 @@
+#file-loader {
+  display: flex;
+  align-items: center; }
+  #file-loader > div,
+  #file-loader > button {
+    flex-shrink: 0; }
+  #file-loader > input {
+    flex-grow: 1;
+    margin: 0 5px; }
